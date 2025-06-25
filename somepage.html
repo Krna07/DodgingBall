@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You for Playing!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #141e30, #243b55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f5f5f5;
+    }
+
+    .container {
+      
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color:  white;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: orangered;
+      color: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00b4d8;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Thank You for Playing!</h1>
+    <p>Hope you enjoyed the game. Would you like to play again or visit my GitHub?</p>
+    
+    <button class="btn" onclick="window.location.href='index.html'">Play Again</button>
+    &nbsp;
+    <button class="btn" onclick="window.open('https://github.com/Krna07')">My GitHub</button>
+  </div>
+
+</body>
+</html>

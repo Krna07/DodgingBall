@@ -1,0 +1,22 @@
+| Constructor                  | Purpose                                         | Example Usage                                         |
+| :--------------------------- | :---------------------------------------------- | :---------------------------------------------------- |
+| `Audio()`                    | Create and control audio playback               | `let audio = new Audio('sound.mp3')`                  |
+| `Image()`                    | Create an image object programmatically         | `let img = new Image(); img.src = 'pic.png'`          |
+| `Date()`                     | Handle date and time                            | `let now = new Date()`                                |
+| `URL()`                      | Parse and manipulate URLs                       | `let url = new URL('https://example.com')`            |
+| `Blob()`                     | Create binary large objects from raw data       | `let blob = new Blob(['Hello World'])`                |
+| `File()`                     | Create file-like objects (inherits from `Blob`) | `let file = new File(['data'], 'file.txt')`           |
+| `FormData()`                 | Build form data to send with network requests   | `let formData = new FormData()`                       |
+| `XMLHttpRequest()`           | Make HTTP requests (older than `fetch()`)       | `let xhr = new XMLHttpRequest()`                      |
+| `WebSocket()`                | Establish real-time WebSocket connections       | `let ws = new WebSocket('ws://example.com')`          |
+| `Event()`                    | Create simple custom events                     | `let event = new Event('myEvent')`                    |
+| `CustomEvent()`              | Create custom events with additional data       | `let event = new CustomEvent('myEvent', {detail:{}})` |
+| `Notification()`             | Display browser notifications                   | `let note = new Notification('Hello!')`               |
+| `Worker()`                   | Run scripts in background threads (Web Workers) | `let worker = new Worker('worker.js')`                |
+| `SpeechSynthesisUtterance()` | Convert text to speech via Speech Synthesis API | `let utter = new SpeechSynthesisUtterance('Hello')`   |
+| `Promise()`                  | Manage asynchronous operations                  | `let promise = new Promise((res, rej) => {...})`      |
+| `RegExp()`                   | Create regular expressions dynamically          | `let regex = new RegExp('abc')`                       |
+| `Set()`                      | Collection of unique values                     | `let set = new Set([1, 2, 3])`                        |
+| `Map()`                      | Collection of key-value pairs                   | `let map = new Map()`                                 |
+| `WeakSet()`                  | Similar to Set, but with weak references        | `let wset = new WeakSet()`                            |
+| `WeakMap()`                  | Similar to Map, but keys are weakly referenced  | `let wmap = new WeakMap()`                            |

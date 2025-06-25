@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color: aliceblue;
+}
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.gamescreen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-image: url('night-view-football-stadium.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.ball {
+  position: absolute;
+  bottom: 5vh;
+  left: 10%;
+  background-image: url('abstract-creative-3d-sphere-with-yarn-ball-effect-removebg-preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+ 
+}
+.obscontainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
+   
+}
+
+.obstacle {
+ 
+  background-image: url('volleyball.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 100px;
+  position: absolute;
+  bottom: 5vh;
+  right: 5px;
+ 
+}
+
+
+
+/* Keyframes for dino jump */
+@keyframes dino {
+  0% {
+    bottom: 5vh;
+  }
+  50% {
+    bottom: 40vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}
+
+/* Only added when ArrowUp pressed */
+.animatedino {
+  animation: dino 1s linear;
+}
+
+/* Ball movement */
+.animateball {
+  animation: ball 5s linear infinite reverse;
+
+  
+}
+@keyframes ball {
+  0% {
+    left: 100vw;
+  
+  }
+  100% {
+    left: -10vw;
+   
+  }
+}
+
+.score {
+  background-color: white;
+  color: black;
+  font-size: 5vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  color: #32363A;
+  height: 8vh;
+  width: 120px;
+  display: flex;
+  align-content: center;
+  border: 2px solid orangered;
+  border-radius: 50px;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+  
+}
+.current {
+  position: relative;
+  align-content: center;
+  height: 5vh;
+  border-radius: 46%;
+}
+.gameover {
+    background-image: url('domestic-life-illustrated.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  position: relative;
+  padding: 10vh;
+  color: azure;
+  visibility: hidden;
+  height: 20vh;
+  width: 60vh;
+  background-color: #32363A;
+  align-content: center;
+  text-align: center;
+  border: 2px solid orangered;
+}
+.animatedinoleft{
+    animation: dinoleft 1s linear;
+}
+
+.quit{
+    color: black;
+    position: absolute;
+    bottom: 4vh;
+    left: 5vh;
+    height: 5vh;
+    width: 7vh;
+    align-items: center;
+    align-content: center;
+   
+    border: .3vh solid white;
+}
+.quit:hover{
+  height: 5.5vh;
+  width: 7.5vh;
+}
+.restart{
+    position: absolute;
+    top: 4vh;
+    left: 5vh;
+    height: 5vh;
+    width: 7vh;
+    align-items: center;
+    align-content: center;
+    border: .3vh solid white;
+   
+
+}
+
+.restart:hover{
+  height: 5.5vh;
+  width: 7.5vh;
+}
+
+.restart button{
+    
+    color: white;
+   
+    height: 4vh;
+    width: 6vh;
+    background-color: orangered;
+    border-color: black;
+}
+
+.quit button{
+
+     color: white;
+    
+    height: 4vh;
+    width: 6vh;
+    background-color: orangered;
+    border-color: black;
+
+}
+#gamy{
+    background-color: orangered;
+    position: absolute;
+    padding: 10px;
+    border: 2px solid white;
+    top: 7vh;
+    left: 140px;
+    font-size: large;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.start,.mute{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #32363A;
+  height: 8vh;
+  width: 80px;
+  display: flex;
+  align-content: center;
+  border: 2px solid orangered;
+  border-radius: 50px;
+  padding: 10px;
+  top: 10vh;
+  left: 10px;
+  background-image: url('speaker-filled-audio-tool.png');
+  background-size: 9vh 7vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-color: white;
+  max-width: width;
+  overflow: hidden;
+  
+}
+
+/* .start::after{
+  content: '';
+  position: absolute;
+  background-color: red;
+  height: 8vh;
+  width: 80px;
+  bottom: -8vh;
+  border-radius: 50px;
+  transition: bottom 4s ease;
+
+}
+.start:hover::after{
+  top: -2px;
+  
+} */
+
+.start:hover{
+  background-color: orangered;
+  border: 2px solid white;
+}
+
+.mute{
+  top: 20vh;
+  width: 70px;
+  height: 9vh;
+  background-image: url('mute-microphone.png');
+  background-position: center;
+  background-size: contain;
+  visibility: hidden;
+}
+
+
+
+.startscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('night-view-football-stadium.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.startscreen h1 {
+  color: white;
+  font-size: 6vh;
+  margin-bottom: 5vh;
+}
+
+.startgamebtn {
+  padding: 20px 40px;
+  font-size: 3vh;
+  background-color: orangered;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.startgamebtn:hover {
+  background-color: white;
+  color: orangered;
+  border: 2px solid orangered;
+}
