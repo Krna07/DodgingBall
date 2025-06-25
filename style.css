@@ -300,3 +300,63 @@ html, body {
   color: orangered;
   border: 2px solid orangered;
 }
+
+
+.navigationkeys{
+  border-radius: 50%;
+  position: absolute;
+  border-top: 5px solid orangered;
+  border-bottom: 4px solid orangered;
+  height: 20vh;
+  width: 20vh;
+  top: 3%;
+  max-width: width;
+  right: 20%;
+  
+
+}
+
+.navigationkeys .up{
+  background-image: url('up-arrow.png');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 39%;
+  top: 10%;
+  height: 5vh;
+  width: 5vh;
+}
+.navigationkeys .down{
+  background-image: url('download.png');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 39%;
+  bottom: 5%;
+   height: 5vh;
+  width: 5vh;
+  
+}
+
+.navigationkeys .left{
+  background-image: url('left-arrow.png');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+   height: 5vh;
+  width: 5vh;
+ 
+}
+
+.navigationkeys .right{
+   background-image: url('right-arrow.png');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  height: 5vh;
+  width: 5vh;
+}

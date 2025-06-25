@@ -267,3 +267,38 @@ document.addEventListener("keydown", function (e) {
     dino.style.left = dleft + "px";
   }
 });
+
+
+
+// Navigation button controls
+const navUp = document.querySelector(".up");
+const navDown = document.querySelector(".down");
+const navLeft = document.querySelector(".left");
+const navRight = document.querySelector(".right");
+
+const dino = document.querySelector('.obstacle');  // cache reference
+
+navUp.addEventListener("click", () => {
+  dino.classList.add('animatedino');
+  setTimeout(() => {
+    dino.classList.remove('animatedino');
+  }, 1000);
+});
+
+navDown.addEventListener("click", () => {
+  let dtop = parseInt(window.getComputedStyle(dino).top);
+  dtop += 15;
+  dino.style.top = dtop + "px";
+});
+
+navLeft.addEventListener("click", () => {
+  let dleft = parseInt(window.getComputedStyle(dino).left);
+  dleft -= 15;
+  dino.style.left = dleft + "px";
+});
+
+navRight.addEventListener("click", () => {
+  let dleft = parseInt(window.getComputedStyle(dino).left);
+  dleft += 15;
+  dino.style.left = dleft + "px";
+});
