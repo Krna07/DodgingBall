@@ -256,9 +256,6 @@ document.addEventListener("keydown", function (e) {
   } else if (e.key === 'ArrowLeft') {
     dleft -= 15;
     dino.style.left = dleft + "px";
-  } else if (e.key === 'ArrowDown') {
-    dtop += 15;
-    dino.style.top = dtop + "px";
   } else if (e.key === 'ArrowRight') {
     dleft += 15;
     dino.style.left = dleft + "px";
